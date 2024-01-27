@@ -25,11 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body
-        className={`body-fonts ${[inter.className, notoSansJP.className].join(' ')} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`body-fonts antialiased`}>{children}</body>
     </html>
   );
 }
