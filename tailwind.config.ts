@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
@@ -18,6 +18,11 @@ const config: Config = {
           600: '#2F6FEB',
         },
       },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        notoSansJP: ['Noto Sans JP', 'sans-serif'],
+        lusitana: ['Lusitana', 'serif'],
+      },
     },
     keyframes: {
       shimmer: {
@@ -28,5 +33,5 @@ const config: Config = {
     },
   },
   plugins: [require('@tailwindcss/forms')],
-};
-export default config;
+}
+export default config

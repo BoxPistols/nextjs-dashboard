@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.body-fonts {
+/* .body-fonts {
   font-family: 'Inter', 'Noto Sans JP', sans-serif;
-}
+} */
 
 /* 日本語テキストにはNoto Sans JPを適用 */
 .jp-text {
