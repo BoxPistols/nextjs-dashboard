@@ -1,6 +1,6 @@
 import '@/app/ui/global.css';
 
-import { Inter, Noto_Sans_JP } from 'next/font/google';
+import { Inter, Noto_Sans_JP, Stick, Jost } from 'next/font/google'
 
 export const inter = Inter({
   subsets: ['latin'],
@@ -18,6 +18,22 @@ export const notoSansJP = Noto_Sans_JP({
   preload: true,
 });
 
+export const stick = Stick({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+  variable: '--font-stick',
+  preload: true,
+});
+
+export const jost = Jost({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+  variable: '--font-jost',
+  preload: true,
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -27,11 +43,10 @@ export default function RootLayout({
     <html
       lang="ja"
       style={{
-        fontFamily: `${inter.style.fontFamily}, ${notoSansJP.style.fontFamily}`,
+        fontFamily: `${jost.style.fontFamily}, ${stick.style.fontFamily}`,
       }}
     >
       <body
-        // ${inter.className} ${notoSansJP.className}
         className={
           //`${inter.className} ${notoSansJP.className}
           `body-style antialiased`
@@ -40,6 +55,6 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  );
+  )
 }
 // TODO: このように複合的には出来ない？ <body className={`${[inter.className, notoSansJP.className].join(' ')} antialiased`}

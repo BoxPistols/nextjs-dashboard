@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
@@ -22,6 +22,8 @@ const config: Config = {
         inter: ['Inter', 'sans-serif'],
         notoSansJP: ['Noto Sans JP', 'sans-serif'],
         lusitana: ['Lusitana', 'serif'],
+        stick: ['Stick', 'sans-serif'],
+        jost: ['Jost', 'sans-serif'],
       },
     },
     keyframes: {
@@ -33,5 +35,5 @@ const config: Config = {
     },
   },
   plugins: [require('@tailwindcss/forms')],
-};
-export default config;
+}
+export default config
