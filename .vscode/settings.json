@@ -1,7 +1,20 @@
 {
   "workbench.colorCustomizations": {
-    "activityBar.background": "#041C8A",
-    "titleBar.activeBackground": "#0627C1",
+    "titleBar.activeBackground": "#2c44b0",
+    "activityBar.background": "#323c62",
     "titleBar.activeForeground": "#FDFDFF"
-  }
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": false
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "css.lint.unknownAtRules": "ignore"
 }
