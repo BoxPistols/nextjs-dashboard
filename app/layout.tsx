@@ -1,7 +1,9 @@
-import '@/app/ui/global.css';
+import '@/app/ui/global.css'
 
-import { Inter, Noto_Sans_JP, Stick, Jost } from 'next/font/google'
+// import { Inter, Noto_Sans_JP, Stick, Jost } from 'next/font/google'
+import { Stick, Jost } from 'next/font/google'
 
+/*
 export const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
@@ -17,6 +19,7 @@ export const notoSansJP = Noto_Sans_JP({
   variable: '--font-noto-sans-jp',
   preload: true,
 });
+*/
 
 export const stick = Stick({
   subsets: ['latin'],
@@ -24,7 +27,7 @@ export const stick = Stick({
   display: 'swap',
   variable: '--font-stick',
   preload: true,
-});
+})
 
 export const jost = Jost({
   subsets: ['latin'],
@@ -32,12 +35,12 @@ export const jost = Jost({
   display: 'swap',
   variable: '--font-jost',
   preload: true,
-});
+})
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html
