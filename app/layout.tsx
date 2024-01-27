@@ -25,8 +25,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={`body-fonts antialiased`}>{children}</body>
+      <body
+        className={`${inter.className} ${notoSansJP.className} body-fonts antialiased`}
+      >
+        {children}
+      </body>
     </html>
-  );
+  )
 }
 // TODO: このように複合的には出来ない？ <body className={`${[inter.className, notoSansJP.className].join(' ')} antialiased`}
