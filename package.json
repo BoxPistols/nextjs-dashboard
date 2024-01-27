@@ -3,6 +3,9 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
+    "fix": "npx prettier --write . && npx eslint --fix .",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ignore-path .gitignore .",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
     "start": "next start"
