@@ -1,6 +1,6 @@
-import '@/app/ui/global.css'
+import '@/app/ui/global.css';
 
-import { Inter, Noto_Sans_JP, Stick, Jost } from 'next/font/google'
+import { Inter, Noto_Sans_JP, Stick, Jost } from 'next/font/google';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -8,7 +8,7 @@ const inter = Inter({
   display: 'swap',
   variable: '--font-inter',
   preload: true,
-})
+});
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ['latin'], // TODO: ['japanese'] 未対応？
@@ -16,7 +16,7 @@ const notoSansJP = Noto_Sans_JP({
   display: 'swap',
   variable: '--font-noto-sans-jp',
   preload: true,
-})
+});
 
 //  const stick = Stick({
 //   subsets: ['latin'],
@@ -37,7 +37,7 @@ const notoSansJP = Noto_Sans_JP({
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html
@@ -55,6 +55,6 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }
 // TODO: このように複合的には出来ない？ <body className={`${[inter.className, notoSansJP.className].join(' ')} antialiased`}

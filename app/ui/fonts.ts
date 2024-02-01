@@ -1,31 +1,31 @@
-import { Inter, Noto_Sans_JP, Jost, Stick, Lusitana } from 'next/font/google'
+import { Inter, Noto_Sans_JP, Jost, Stick, Lusitana } from 'next/font/google';
 
 export const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
-})
+});
 
 export const jost = Jost({
   weight: ['400', '700'],
   subsets: ['latin'],
-})
+});
 
 export const lusitana = Lusitana({
   weight: ['400', '700'],
   subsets: ['latin'],
-})
+});
 
 export const stick = Stick({
   subsets: ['latin'],
   weight: ['400'],
   variable: '--font-stick',
-})
+});
 
 export const notoSansJP = Noto_Sans_JP({
   weight: ['400', '500', '700'],
   variable: '--font-noto-sans-jp',
   subsets: ['latin'],
-})
+});
 
 /**
  * @official https://nextjs.org/learn/dashboard-app/optimizing-fonts-images
